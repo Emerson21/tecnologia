@@ -1,9 +1,6 @@
+<%@page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE HTML>
-<!--
-	Strongly Typed 1.1 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Left Sidebar - Strongly Typed by HTML5 UP</title>
@@ -12,17 +9,13 @@
 		<meta name="keywords" content="" />
 		<meta name="viewport" content="width=1040" />
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700" rel="stylesheet" type="text/css" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/config.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
+		<link type="text/css" media="screen" rel="stylesheet" href="<c:url value="/css/skel-noscript.css"/>"/>
+		<link type="text/css" media="screen" rel="stylesheet" href="<c:url value="/css/style.css"/>"/>
+		<link type="text/css" media="screen" rel="stylesheet" href="<c:url value="/css/style-desktop.css"/>"/>		<script src="<c:url value="/js/jquery.min.js"/>"></script>
+		<script src="<c:url value="/js/jquery.dropotron.min.js"/>"></script>
+		<script src="<c:url value="/js/config.js"/>"></script>
+		<script src="<c:url value="/js/skel.min.js"/>"></script>
+		<script src="<c:url value="/js/skel-panels.min.js"/>"></script>
 	</head>
 	<body class="left-sidebar">
 

@@ -45,7 +45,7 @@
 		</dependency>
  	 </dependencies>
   <build>
-        <finalName>sokahan</finalName>
+        <finalName>site</finalName>
         <plugins>
                 <plugin>
                         <!-- tomcat 7: habilitar a role manager-jmx no tomcat-users.xml -->

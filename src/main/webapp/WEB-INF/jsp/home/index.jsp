@@ -1,28 +1,22 @@
+<%@page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE HTML>
-<!--
-	Strongly Typed 1.1 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Strongly Typed by HTML5 UP</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="viewport" content="width=1040" />
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700" rel="stylesheet" type="text/css" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/config.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
+		<title>EA Sistemas</title>
+<!-- 		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> -->
+<!-- 		<meta name="description" content="" /> -->
+<!-- 		<meta name="keywords" content="" /> -->
+<!-- 		<meta name="viewport" content="width=1040" /> -->
+		<link type="text/css" media="screen" rel="stylesheet" href="<c:url value="/css/skel-noscript.css"/>"/>
+		<link type="text/css" media="screen" rel="stylesheet" href="<c:url value="/css/style.css"/>"/>
+		<link type="text/css" media="screen" rel="stylesheet" href="<c:url value="/css/style-desktop.css"/>"/>
+<!-- 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700" rel="stylesheet" type="text/css" /> -->
+		<script src="<c:url value="/js/jquery.min.js"/>"></script>
+		<script src="<c:url value="/js/jquery.dropotron.min.js"/>"></script>
+		<script src="<c:url value="/js/config.js"/>"></script>
+		<script src="<c:url value="/js/skel.min.js"/>"></script>
+		<script src="<c:url value="/js/skel-panels.min.js"/>"></script>
 	</head>
 	<body class="homepage">
 
@@ -57,9 +51,9 @@
 											<li><a href="#">Veroeros feugiat</a></li>
 										</ul>
 									</li>
-									<li><a class="fa fa-cog" href="left-sidebar.html"><span>Left Sidebar</span></a></li>
-									<li><a class="fa fa-retweet" href="right-sidebar.html"><span>Right Sidebar</span></a></li>
-									<li><a class="fa fa-sitemap" href="no-sidebar.html"><span>No Sidebar</span></a></li>
+									<li><a class="fa fa-cog" href="left-sidebar.jsp"><span>Left Sidebar</span></a></li>
+									<li><a class="fa fa-retweet" href="right-sidebar.jsp"><span>Right Sidebar</span></a></li>
+									<li><a class="fa fa-sitemap" href="no-sidebar.jsp"><span>No Sidebar</span></a></li>
 								</ul>
 							</nav>
 
@@ -98,7 +92,7 @@
 										<header>
 											<h3>Nice! What is HTML5 UP?</h3>
 										</header>
-										<p><a href="http://html5up.net/">HTML5 UP</a> is a side project of <a href="http://n33.co">AJ’s</a> (ie. me).  
+										<p><a href="http://html5up.net/">HTML5 UP</a> is a side project of <a href="http://n33.co">AJâs</a> (ie. me).  
 										I started it as a way to both test my <a href="http://skeljs.org">skelJS</a> framework (formerly 
 										5grid) and sharpen up my design skills a bit.</p>
 									</section>
@@ -152,8 +146,8 @@
 									<!-- Post -->
 										<article class="is-post">
 											<header>
-												<h2><a href="#">I don’t want to say <strong>it’s the aliens</strong> ...<br />
-												but it’s the aliens.</a></h2>
+												<h2><a href="#">I donât want to say <strong>itâs the aliens</strong> ...<br />
+												but itâs the aliens.</a></h2>
 											</header>
 											<a href="http://regularjane.deviantart.com/art/Write-354865228" class="image image-full"><img src="images/pic04.jpg" alt="" /></a>
 											<h3>I mean isn't it possible?</h3>
