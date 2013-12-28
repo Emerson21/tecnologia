@@ -7,6 +7,9 @@ import br.com.caelum.vraptor.Resource;
 public class HomeController {
 
 	@Get("/")
+	public void underConstruction() {}
+	
+	
 	public void index() {}
 	
 }
