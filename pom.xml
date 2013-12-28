@@ -45,21 +45,8 @@
 		</dependency>
  	 </dependencies>
   <build>
-        <finalName>site</finalName>
+        <finalName>tecnologia</finalName>
         <plugins>
-                <plugin>
-                        <!-- tomcat 7: habilitar a role manager-jmx no tomcat-users.xml -->
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>tomcat-maven-plugin</artifactId>
-                        <version>1.1</version>
-                        <configuration>
-                           <url>http://localhost:8080/manager</url>
-                           <update>true</update>
-                           <warFile>target/${project.artifactId}.war</warFile>
-                           <username>admin</username>
-                           <password>admin</password>
-                        </configuration>
-                </plugin>
                 <plugin>
                         <artifactId>maven-compiler-plugin</artifactId>
                         <version>2.3.2</version>
