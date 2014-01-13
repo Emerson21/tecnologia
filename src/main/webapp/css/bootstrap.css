@@ -1,4 +1,4 @@
-/*!
+/*!  49C8E6
  * Bootstrap v3.0.3 (http://getbootstrap.com)
  * Copyright 2013 Twitter, Inc.
  * Licensed under http://www.apache.org/licenses/LICENSE-2.0
@@ -303,11 +303,13 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Monotype Corsiva";
+  /*"Helvetica Neue", Helvetica, Arial,*/ 
+  font-size: 20px;
   line-height: 1.428571429;
-  color: #333333;
-  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  background-color: #B3E6EF;
+  background-image: linear-gradient(to bottom, #FFFFFF 0%, #18555C 100%);
 }
 
 input,
@@ -397,10 +399,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Monotype Corsiva"/*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
+/*  line-height: 1.1;
+  color: inherit;*/
 }
 
 h1 small,
@@ -435,8 +437,8 @@ h6 .small,
 h1,
 h2,
 h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+   margin-top: 130px;
+   margin-bottom: 40px;
 }
 
 h1 small,
@@ -495,7 +497,9 @@ h6,
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
+  color: #FFFCFC;
+  font-size: 30px;
 }
 
 .lead {
@@ -823,6 +827,7 @@ pre code {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+    height: 700px;
   }
 }
 
@@ -3530,9 +3535,9 @@ input[type="button"].btn-block {
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
-  font-size: 14px;
+  font-size: 20px;
   list-style: none;
-  background-color: #ffffff;
+  background-color: #F1F7F7;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -4820,13 +4825,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  color: #FFFFFF;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #ffffff;
-  background-color: transparent;
+  background-color: rgba(34, 140, 215, 0.31);
 }
 
 .navbar-inverse .navbar-nav > .active > a,
@@ -4865,7 +4870,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
   color: #ffffff;
-  background-color: #080808;
+  background-color: #42BAC2;
 }
 
 @media (max-width: 767px) {
@@ -5221,13 +5226,17 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-  padding: 30px;
+/*  padding: 30px;*/
   margin-bottom: 30px;
   font-size: 21px;
-  font-weight: 200;
+  background-image: url("../images/easistemas.png"); 
+  background-repeat: no-repeat; 
+  background-position-x: 280PX; 
+  background-position-y: 115px;  
+/*  font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #6623BD;*/
 }
 
 .jumbotron h1,
@@ -5250,7 +5259,7 @@ a.list-group-item.active > .badge,
 
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
+    /*padding-top: 48px;*/
     padding-bottom: 48px;
   }
   .container .jumbotron {
@@ -5259,7 +5268,9 @@ a.list-group-item.active > .badge,
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
+    font-size: 150px;
+    padding-left: 150px;
+    /*padding-top: 10px;*/
   }
 }
 

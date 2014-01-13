@@ -3,6 +3,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>EA Sistemas</title>
 		<link rel="shortcut icon" type="image/png" href='<c:url value="/images/easistemas.png"/>'/>
 		
