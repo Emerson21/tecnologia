@@ -44,7 +44,6 @@ public class HomeController {
 	@Post("/contato")
 	public void enviarEmail(Contato contato) throws EmailException {
 		sendEmail.sendEmail(contato.getEmail());
-		sendEmail.sendEmailReceived(contato.getEmail());
 		result.use(Results.status()).ok();
 	}
 
