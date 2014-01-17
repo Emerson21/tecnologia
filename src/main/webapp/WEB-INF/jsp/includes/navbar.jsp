@@ -1,23 +1,41 @@
 <%@page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<nav class="navbar navbar-inverse" role="navigation">
-	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    	<ul class="nav navbar-nav">
-      		<li><a href='<c:url value="/"/>'>EA Sistemas</a></li>
-      		<li class="dropdown">
-      				<a href="#" class="dropdown-toggle" data-toggle="dropdown">A Empresa <b class="caret"></b></a>
+<!-- NAVBAR ================================================== -->
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="<c:url value="/"/>">EA Sistemas</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href='<c:url value="/"/>'>Home</a></li>
+      			<li class="dropdown">
+      				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Conheça a EA Sistemas</a>
       				<ul class="dropdown-menu">
-        					<li><a href='<c:url value="/missao"/>'>Missão</a></li>
-        					<li><a href='<c:url value="/visao"/>'>Visão</a></li>
-        					<li><a href='<c:url value="/valores"/>'>Valores</a></li>
-        					<li class="divider"></li>
-        					<li class="disabled"><a href="#">Diretor/Fundador</a></li>
+<%--       					<li class="disabled"><a href='<c:url value="/historia"/>'>História</a></li> --%>
+						<li class="disabled"><a href='#'>História</a></li>
+        				<li class="divider"></li>
+<%--         				<li class="disabled"><a href='<c:url value="/owner"/>'>Conheça o Diretor/Fundador</a></li> --%>
+						<li class="disabled"><a href='#'>Conheça o Diretor/Fundador</a></li>
       				</ul>
     				</li>
-      		<li class="disabled"><a href="#">Nossos Serviços</a></li>
-      		<li class="disabled"><a href="#">Contato</a></li>
-    	</ul>
-  	</div>
-</nav>
-<%@include file="../includes/footer.jsp" %>
+      			<li class="disabled"><a href="#">Nossos Serviços</a></li>
+<%--       			<li class="disabled"><a href="<c:url value="/servicos"/>">Nossos Serviços</a></li> --%>
+      			<li><a href="<c:url value="/contato"/>">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>

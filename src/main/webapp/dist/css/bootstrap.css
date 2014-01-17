@@ -1,4 +1,4 @@
-/*!  49C8E6
+/*!
  * Bootstrap v3.0.3 (http://getbootstrap.com)
  * Copyright 2013 Twitter, Inc.
  * Licensed under http://www.apache.org/licenses/LICENSE-2.0
@@ -45,6 +45,10 @@ html {
 
 body {
   margin: 0;
+}
+
+#loadingContent{
+	background: url(../../images/gif/loading.gif) no-repeat 100%;
 }
 
 a {
@@ -303,13 +307,11 @@ html {
 }
 
 body {
-  font-family: "Monotype Corsiva";
-  /*"Helvetica Neue", Helvetica, Arial,*/ 
-  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
   line-height: 1.428571429;
-  color: rgb(255, 255, 255);
-  background-color: #B3E6EF;
-  background-image: linear-gradient(to bottom, #FFFFFF 0%, #18555C 100%);
+  color: #333333;
+  background-color: #ffffff;
 }
 
 input,
@@ -365,8 +367,23 @@ img {
           transition: all 0.2s ease-in-out;
 }
 
+.missao {
+	background-image: url("../../images/missao.png");
+	background-repeat: no-repeat;
+}
+
+.visao {
+	background-image: url("../../images/visao.png");
+	background-repeat: no-repeat;
+}
+
+.valores {
+	background-image: url("../../images/valores.png");
+	background-repeat: no-repeat;
+}
+
 .img-circle {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 hr {
@@ -399,10 +416,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Monotype Corsiva"/*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
-/*  line-height: 1.1;
-  color: inherit;*/
+  line-height: 1.1;
+  color: inherit;
 }
 
 h1 small,
@@ -437,8 +454,8 @@ h6 .small,
 h1,
 h2,
 h3 {
-   margin-top: 130px;
-   margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h1 small,
@@ -497,9 +514,7 @@ h6,
 }
 
 p {
-  margin: 0 0 5px;
-  color: #FFFCFC;
-  font-size: 30px;
+  margin: 0 0 10px;
 }
 
 .lead {
@@ -827,7 +842,6 @@ pre code {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
-    height: 700px;
   }
 }
 
@@ -3535,9 +3549,9 @@ input[type="button"].btn-block {
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
-  font-size: 20px;
+  font-size: 14px;
   list-style: none;
-  background-color: #F1F7F7;
+  background-color: #ffffff;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -4825,13 +4839,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #FFFFFF;
+  color: #999999;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #ffffff;
-  background-color: rgba(34, 140, 215, 0.31);
+  background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
@@ -4870,7 +4884,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
   color: #ffffff;
-  background-color: #42BAC2;
+  background-color: #080808;
 }
 
 @media (max-width: 767px) {
@@ -5226,17 +5240,13 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-/*  padding: 30px;*/
+  padding: 30px;
   margin-bottom: 30px;
   font-size: 21px;
-  background-image: url("../images/easistemas.png"); 
-  background-repeat: no-repeat; 
-  background-position-x: 280PX; 
-  background-position-y: 115px;  
-/*  font-weight: 200;
+  font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #6623BD;*/
+  background-color: #eeeeee;
 }
 
 .jumbotron h1,
@@ -5259,7 +5269,7 @@ a.list-group-item.active > .badge,
 
 @media screen and (min-width: 768px) {
   .jumbotron {
-    /*padding-top: 48px;*/
+    padding-top: 48px;
     padding-bottom: 48px;
   }
   .container .jumbotron {
@@ -5268,9 +5278,7 @@ a.list-group-item.active > .badge,
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 150px;
-    padding-left: 150px;
-    /*padding-top: 10px;*/
+    font-size: 63px;
   }
 }
 
