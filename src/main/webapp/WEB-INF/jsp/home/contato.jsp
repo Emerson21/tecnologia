@@ -67,7 +67,7 @@
 			
 			<div class="form-group input-group">
 		  		<span class="input-group-addon">@</span>
-		  		<input id="to" type="text" class="form-control" name="contato.email.to" placeholder="Digite seu e-mail" />
+		  		<input id="from" type="text" class="form-control" name="contato.email.from" placeholder="Digite seu e-mail" />
 			</div>
 			<div class="form-group input-group">
 		  		<span class="input-group-addon">Assunto</span>

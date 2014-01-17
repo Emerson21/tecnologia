@@ -19,7 +19,7 @@ $(document).ready(function() {
 		rules : {
 			'contato.nome' : { required: true },
 			'contato.sobrenome' : { required: true },
-			'contato.email.to' : { required : true, email : true },
+			'contato.email.from' : { required : true, email : true },
 			'contato.telefone' : { required : true },
 			'contato.email.subject' : { required: true },
 			'contato.email.message' : { required: true }
@@ -33,7 +33,7 @@ $(document).ready(function() {
 		messages: {
 			'contato.nome': { required: "Teste nome required" },
 			'contato.sobrenome': { required: "Teste nome required" },
-			'contato.email.to': { required: "Teste email to required" },
+			'contato.email.from': { required: "Teste email to required" },
 			'contato.telefone': { required: "Telefone obrigatorio" },
 			'contato.email.subject': { required: "Assunto obrigatorio" },
 			'contato.email.message': { required: "Mensagem obrigatorio" }
@@ -63,16 +63,16 @@ $(document).ready(function() {
 			'data' : [{ 'name' : 'contato.nome', 'value' : $('#nome').val() },
 			          { 'name' : 'contato.sobrenome', 'value' : $('#sobrenome').val() },
 			          { 'name' : 'contato.telefone', 'value' : $('#telefone').val() },
-			          { 'name' : 'contato.email.to', 'value' : $('#to').val() },
+			          { 'name' : 'contato.email.from', 'value' : $('#from').val() },
 			          { 'name' : 'contato.email.subject', 'value' : $('#subject').val()},
 			          { 'name' : 'contato.email.message', 'value' : $('#message').val()}
 			          ],
 			 'success' : function() {
-				 $('#loading').addClass('hide');
+				 $('#loading').remove();
 				 $('.alert-success').show().dialog();
 			 },
 			 'error' : function() {
-				 $('#loading').addClass('hide');;
+				 $('#loading').remove();
 				 $('.alert-danger').show().dialog();
 			 }
 		});
