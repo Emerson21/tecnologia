@@ -49,7 +49,7 @@
     
     <div class="container">
 	  	<h1>Entre em contato</h1>
-		<form id="form-contato" action="<c:url value="/contato"/>" class="form-horizontal" role="search" method="post">
+		<form id="form-contato" action="" class="form-horizontal" role="search">
 			<div class="form-group input-group">
 		  		<span class="input-group-addon">Nome</span>
 		  		<input id="nome" type="text" class="form-control" name="contato.nome" placeholder="Digite seu Nome" />
@@ -61,14 +61,14 @@
 			</div>
 
 			<div class="form-group input-group">
+		  		<span class="input-group-addon">Telefone</span>
+		  		<input id="telefone" type="text" class="form-control" name="contato.telefone" placeholder="Digite seu telefone" />
+			</div>
+			
+			<div class="form-group input-group">
 		  		<span class="input-group-addon">@</span>
 		  		<input id="to" type="text" class="form-control" name="contato.email.to" placeholder="Digite seu e-mail" />
 			</div>
-			<div class="form-group input-group">
-		  		<span class="input-group-addon">Telefone</span>
-		  		<input id="telefone" type="text" class="form-control" name="contato.telefone" placeholder="Digite seu telefone" data-format="(dd) dddd*-dddd" />
-			</div>
-			
 			<div class="form-group input-group">
 		  		<span class="input-group-addon">Assunto</span>
 		  		<input id="subject" type="text" class="form-control" name="contato.email.subject" placeholder="Orçamento, Contratação de serviços"  />
@@ -76,7 +76,7 @@
 			<div class="form-group">
 				<textarea id="message" placeholder="Digite sua mensagem aqui" class="form-control" name="contato.email.message" rows="3" ></textarea>
 			</div>
-		  	<button id="buttonSubmitContato" type="submit" class="btn btn-primary form-group ">Enviar</button>
+		  	<button id="buttonSubmitContato" type="button" class="btn btn-primary form-group ">Enviar</button>
 		</form>
 	</div>
 	

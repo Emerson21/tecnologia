@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	$(".alert-success").hide();
 	$(".alert-danger").hide();
+	
 	$("#telefone").mask("(99) 9999?9-9999").focusout(function(event) {
 		var tamanho = $(this).val().replace("_", "").length;
 		if ( tamanho == 14) {
@@ -47,4 +48,34 @@ $(document).ready(function() {
             }
         }
 	});
+	
+	$('#buttonSubmitContato').on("click", function() {
+		event.preventDefault;
+		if ( $('#form-contato').valid() == false) {
+			return false;
+		}
+		
+		$('#loading').removeClass('hide').dialog({ modal : true });
+		$(".ui-dialog-titlebar-close").remove();
+		$.ajax({
+			'url' : '/tecnologia/contato',
+			'method' : 'POST',
+			'data' : [{ 'name' : 'contato.nome', 'value' : $('#nome').val() },
+			          { 'name' : 'contato.sobrenome', 'value' : $('#sobrenome').val() },
+			          { 'name' : 'contato.telefone', 'value' : $('#telefone').val() },
+			          { 'name' : 'contato.email.to', 'value' : $('#to').val() },
+			          { 'name' : 'contato.email.subject', 'value' : $('#subject').val()},
+			          { 'name' : 'contato.email.message', 'value' : $('#message').val()}
+			          ],
+			 'success' : function() {
+				 $('#loading').addClass('hide');
+				 $('.alert-success').show().dialog();
+			 },
+			 'error' : function() {
+				 $('#loading').addClass('hide');;
+				 $('.alert-danger').show().dialog();
+			 }
+		});
+	});
+	
 });
