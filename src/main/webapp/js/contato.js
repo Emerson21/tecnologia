@@ -31,12 +31,12 @@ $(document).ready(function() {
 				$(element).addClass('has-success').closest('.form-group').removeClass('has-error').addClass('has-success');
 		},
 		messages: {
-			'contato.nome': { required: "Teste nome required" },
-			'contato.sobrenome': { required: "Teste nome required" },
-			'contato.email.from': { required: "Teste email to required" },
-			'contato.telefone': { required: "Telefone obrigatorio" },
-			'contato.email.subject': { required: "Assunto obrigatorio" },
-			'contato.email.message': { required: "Mensagem obrigatorio" }
+			'contato.nome': { required: "Este campo é obrigatório" },
+			'contato.sobrenome': { required: "Este campo é obrigatório" },
+			'contato.email.from': { required: "Este campo é obrigatório" },
+			'contato.telefone': { required: "Este campo é obrigatório" },
+			'contato.email.subject': { required: "Este campo é obrigatório" },
+			'contato.email.message': { required: "Este campo é obrigatório" }
 		},
         errorElement: 'span',
         errorClass: 'help-block',
