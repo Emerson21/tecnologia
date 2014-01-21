@@ -28,7 +28,7 @@ public class SendEmailImpl implements SendEmail {
 		SimpleEmail simpleEmail = emailConnect();
 		simpleEmail.setFrom(email.getFrom());
 		simpleEmail.setSubject(email.getSubject());
-		simpleEmail.setMsg(email.getMessage().concat(contato.getNome()).concat(contato.getSobreNome()).concat(contato.getTelefone()));
+		simpleEmail.setMsg(formatEmailMessage(contato));
 		simpleEmail.addTo(USER_NAME);
 		simpleEmail.send();
 	}
@@ -52,6 +52,13 @@ public class SendEmailImpl implements SendEmail {
 		simpleEmail.setAuthenticator(new DefaultAuthenticator(USER_NAME, PASSWORD));
 		simpleEmail.setStartTLSEnabled(true);
 		return simpleEmail;
+	}
+	
+	private String formatEmailMessage(Contato contato) {
+		String message = "Nome: ".concat(contato.getNome()).concat(" ").concat(contato.getSobreNome());
+		message.concat("Telefone: ").concat(contato.getTelefone());
+		message.concat("Mensagem: ").concat(contato.getEmail().getMessage());
+		return message;
 	}
 	
 }
