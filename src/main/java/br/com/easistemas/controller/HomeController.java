@@ -43,7 +43,7 @@ public class HomeController {
 	
 	@Post("/contato")
 	public void enviarEmail(Contato contato) throws EmailException {
-		sendEmail.sendEmail(contato.getEmail());
+		sendEmail.sendEmail(contato);
 		result.use(Results.status()).ok();
 	}
 
