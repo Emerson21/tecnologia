@@ -3,12 +3,15 @@ package br.com.easistemas.mail;
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
+import org.apache.log4j.Logger;
 
 import br.com.caelum.vraptor.ioc.Component;
 import br.com.easistemas.canonico.Email;
 
 @Component
 public class SendEmailImpl implements SendEmail {
+	
+	private static final Logger LOGGER = Logger.getLogger(SendEmailImpl.class);
 	
 	private static final String PASSWORD = System.getenv().get("EMAIL_PASS");
 	private static final String HOST_NAME = "smtp-mail.outlook.com";
@@ -17,8 +20,9 @@ public class SendEmailImpl implements SendEmail {
 	
 	@Override
 	public void sendEmail(Email email) throws EmailException {
+		LOGGER.info("Password : "+ PASSWORD);
 		SimpleEmail simpleEmail = emailConnect();
-		simpleEmail.setFrom(email.getTo());
+		simpleEmail.setFrom(email.getFrom());
 		simpleEmail.setSubject(email.getSubject());
 		simpleEmail.setMsg(email.getMessage());
 		simpleEmail.addTo(USER_NAME);
@@ -31,7 +35,7 @@ public class SendEmailImpl implements SendEmail {
 		simpleEmail.setFrom(USER_NAME);
 		simpleEmail.setSubject(email.getSubject());
 		simpleEmail.setMsg(email.getMessage());
-		simpleEmail.addTo(email.getTo());
+		simpleEmail.addTo(email.getFrom());
 		simpleEmail.send();
 	}
 	
