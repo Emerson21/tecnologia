@@ -20,7 +20,6 @@ public class SendEmailImpl implements SendEmail {
 	
 	@Override
 	public void sendEmail(Email email) throws EmailException {
-		LOGGER.info("Password : "+ PASSWORD);
 		SimpleEmail simpleEmail = emailConnect();
 		simpleEmail.setFrom(email.getFrom());
 		simpleEmail.setSubject(email.getSubject());
