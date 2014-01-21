@@ -34,17 +34,21 @@ public class SendEmailImpl implements SendEmail {
 	}
 
 	@Override
-	public void sendEmailReceived(Contato contato) throws EmailException {
+	public void sendEmailReceived(Contato contato) {
 		Email email = contato.getEmail();
 		SimpleEmail simpleEmail = emailConnect();;
-		simpleEmail.setFrom(USER_NAME);
-		simpleEmail.setSubject(email.getSubject());
-		simpleEmail.setMsg(email.getMessage().concat(contato.getNome()).concat(contato.getSobreNome()).concat(contato.getTelefone()));
-		simpleEmail.addTo(email.getFrom());
-		simpleEmail.send();
+		try {
+			simpleEmail.setFrom(USER_NAME);
+			simpleEmail.setSubject(email.getSubject());
+			simpleEmail.setMsg(email.getMessage().concat(contato.getNome()).concat(contato.getSobreNome()).concat(contato.getTelefone()));
+			simpleEmail.addTo(email.getFrom());
+			simpleEmail.send();
+		} catch (EmailException e) {
+			e.printStackTrace();
+		}
 	}
 	
-	private SimpleEmail emailConnect() throws EmailException {
+	private SimpleEmail emailConnect() {
 		SimpleEmail simpleEmail = new SimpleEmail();
 		simpleEmail.setDebug(true);
 		simpleEmail.setHostName(HOST_NAME);
