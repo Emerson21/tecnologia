@@ -50,7 +50,7 @@ $(document).ready(function() {
 	});
 	
 	$('#buttonSubmitContato').on("click", function() {
-		event.preventDefault;
+		event.preventDefault();
 		if ( $('#form-contato').valid() == false) {
 			return false;
 		}
