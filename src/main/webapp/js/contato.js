@@ -58,7 +58,7 @@ $(document).ready(function() {
 		$('#loading').removeClass('hide').dialog({ modal : true });
 		$(".ui-dialog-titlebar-close").remove();
 		$.ajax({
-			'url' : '/tecnologia/contato',
+			'url' : '/contato',
 			'method' : 'POST',
 			'data' : [{ 'name' : 'contato.nome', 'value' : $('#nome').val() },
 			          { 'name' : 'contato.sobrenome', 'value' : $('#sobrenome').val() },
@@ -67,13 +67,12 @@ $(document).ready(function() {
 			          { 'name' : 'contato.email.subject', 'value' : $('#subject').val()},
 			          { 'name' : 'contato.email.message', 'value' : $('#message').val()}
 			          ],
-			 'success' : function(data) {
+			 'success' : function() {
 				 $('#loading').remove();
 				 $('.alert-success').show().dialog();
 			 },
-			 'error' : function(data) {
+			 'error' : function() {
 				 $('#loading').remove();
-				 alert(data.responseText);
 				 $('.alert-danger').show().dialog();
 			 }
 		});
