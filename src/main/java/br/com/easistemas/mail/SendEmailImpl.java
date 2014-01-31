@@ -3,7 +3,6 @@ package br.com.easistemas.mail;
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
-import org.jboss.logging.Logger;
 
 import br.com.caelum.vraptor.ioc.Component;
 import br.com.easistemas.canonico.Contato;
@@ -13,7 +12,7 @@ import br.com.easistemas.canonico.Email;
 public class SendEmailImpl implements SendEmail {
 	
 	private static final String PASSWORD; 
-	private static final String HOST_NAME = "smtp.live.com";//"smtp-mail.outlook.com";
+	private static final String HOST_NAME = "smtp.live.com";
 	private static final int SMTP_PORT = 587;
 	private static final String USER_NAME = "eaharaguchi@easistemas.com.br";
 	
@@ -23,9 +22,6 @@ public class SendEmailImpl implements SendEmail {
 	
 	@Override
 	public void sendEmail(Contato contato) throws EmailException {
-		Logger logger = Logger.getLogger(SendEmailImpl.class);
-		logger.info("*** teste ***");
-		
 		Email email = contato.getEmail();
 		SimpleEmail simpleEmail = emailConnect();
 		simpleEmail.setFrom(email.getFrom());
@@ -51,8 +47,6 @@ public class SendEmailImpl implements SendEmail {
 	}
 	
 	private SimpleEmail emailConnect() {
-		Logger logger = Logger.getLogger(SendEmailImpl.class);
-		logger.info("*** Teste ***");
 		SimpleEmail simpleEmail = new SimpleEmail();
 		simpleEmail.setDebug(true);
 		simpleEmail.setHostName(HOST_NAME);
