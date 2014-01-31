@@ -67,12 +67,13 @@ $(document).ready(function() {
 			          { 'name' : 'contato.email.subject', 'value' : $('#subject').val()},
 			          { 'name' : 'contato.email.message', 'value' : $('#message').val()}
 			          ],
-			 'success' : function() {
+			 'success' : function(data) {
 				 $('#loading').remove();
 				 $('.alert-success').show().dialog();
 			 },
-			 'error' : function() {
+			 'error' : function(data) {
 				 $('#loading').remove();
+				 alert(data.responseText);
 				 $('.alert-danger').show().dialog();
 			 }
 		});
