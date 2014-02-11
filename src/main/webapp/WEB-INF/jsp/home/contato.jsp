@@ -9,26 +9,14 @@
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Serviços" alt="Serviços">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Nossos serviços</h1>
-              <p>Desenvolvimento de softwares, desenvolvimento de sistemas web, desenvolvimento utilizando testes, metodologia ágil em Scrum.</p>
-              <p><a class="btn btn-lg btn-primary" href="<c:url value="/contato"/>" role="button">Entre em contato</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
           <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:Missão" alt="Nossa Missão">
           <div class="container">
             <div class="carousel-caption">
               <h1>Nossa missão</h1>
               <p>Desenvolver sistemas com alto padrão de qualidade e tecnologia para que possamos fazer parte da história de sucesso de cada cliente.</p>
-              <p><a class="btn btn-lg btn-primary" href="<c:url value="/missao"/>" role="button">Leia mais</a></p>
             </div>
           </div>
         </div>
@@ -38,7 +26,7 @@
             <div class="carousel-caption">
               <h1>Conheça a história da EA Sistemas</h1>
               <p>Conheça a trajetória da EA Sistemas e o que ela oferece para seus cliente/parceiros.</p>
-              <p><a class="btn btn-lg btn-primary disabled" href="<c:url value="/historia"/>" role="button">Leia Mais</a></p>
+              <p><a class="btn btn-lg btn-primary" href="<c:url value="/historia"/>" role="button">Leia Mais</a></p>
             </div>
           </div>
         </div>

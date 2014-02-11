@@ -22,15 +22,12 @@
       			<li class="dropdown">
       				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Conheça a EA Sistemas</a>
       				<ul class="dropdown-menu">
-<%--       					<li class="disabled"><a href='<c:url value="/historia"/>'>História</a></li> --%>
-						<li class="disabled"><a href='#'>História</a></li>
+      					<li><a href='<c:url value="/historia"/>'>Nossa história</a></li>
         				<li class="divider"></li>
-<%--         				<li class="disabled"><a href='<c:url value="/owner"/>'>Conheça o Diretor/Fundador</a></li> --%>
-						<li class="disabled"><a href='#'>Conheça o Diretor/Fundador</a></li>
+        				<li><a href='<c:url value="/owner"/>'>Conheça o Diretor/Fundador</a></li>
       				</ul>
     				</li>
-      			<li class="disabled"><a href="#">Nossos Serviços</a></li>
-<%--       			<li class="disabled"><a href="<c:url value="/servicos"/>">Nossos Serviços</a></li> --%>
+      			<li><a href="<c:url value="/servicos"/>">Nossos Serviços</a></li>
       			<li><a href="<c:url value="/contato"/>">Contato</a></li>
               </ul>
             </div>

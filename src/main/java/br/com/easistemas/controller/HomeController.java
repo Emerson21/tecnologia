@@ -20,10 +20,8 @@ public class HomeController {
 		this.sendEmail = sendEmail;
 		this.result = result;
 	}
-	
-	@Get("/")
-	public void template() {}
-	
+		
+	@Get("/")	
 	public void index() {}
 	
 	@Get("/missao")
@@ -36,11 +34,11 @@ public class HomeController {
 	public void contato() {}
 
 	@Get("/servicos")
-	public void servicos() {}
+	public void services() {}
 
 	@Get("/historia")
 	public void historia() {}
-	
+
 	@Post("/contato")
 	public void enviarEmail(Contato contato) throws EmailException {
 		sendEmail.sendEmail(contato);
