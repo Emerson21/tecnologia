@@ -29,7 +29,7 @@
 		<p>Após esse período passei a estagiar em São Paulo em uma seguradora, como atendimento ao cliente. Durante esse período passei a me especializar em programação na linguagem Java, na qual trabalhamos até hoje.</p>
 		<p>Com o intuito de ter uma melhor gestão da EA Sistemas, comecei a estudar na Fundação Getúlio Vargas uma Pós-Graduação em Administração de Empresas.</p>
 		<p>Nesse período de estudos comecei a amadurece a ideia de administrar a minha própria empresa. Dando o primeiro passo para a realização e concretização desse grande sonho, criei a EA Sistemas, uma consultoria voltada ao desenvolvimento de sistemas para ajudar as empresas, independente de seu porte, a concretizar seus sonhos e objetivos, tendo uma relação muito sadia com você parceiro da EA Sistemas.</p>
-		<p>Nos contate para maiores agendarmos uma visita em sua empresa, desfrutarmos de um café, almoço, para estreitarmos ainda mais nossa relação!</p>
+		<p>Nos contate para agendarmos uma visita em sua empresa, desfrutarmos de um café, almoço, para estreitarmos ainda mais nossa relação!</p>
 		<p>Um grandioso abraço!</p>
 		<p>Emerson da Silva Alonso Haraguchi</p>
 		<p>Diretor/Co-founder da EA Sistemas</p>
