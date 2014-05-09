@@ -24,7 +24,7 @@
 	      		<img data-src="holder.js/100%x180" alt="...">
 	  		</div>
 	  	</div>
-		<p>Olá, me chamo Emerson da Silva Alonso Haraguchi, 25 anos, casado, praticante do Budismo de Nitichen Daishonin.</p>
+		<p>Olá, me chamo Emerson da Silva Alonso Haraguchi, 25 anos, casado, praticante do Budismo de Nitiren Daishonin.</p>
 		<p>Iniciei minha carreira aos 20 anos como estagiário atuando em um Hospital da Unimed localizada na cidade de São Roque.</p>
 		<p>Após esse período passei a estagiar em São Paulo em uma seguradora, como atendimento ao cliente. Durante esse período passei a me especializar em programação na linguagem Java, na qual trabalhamos até hoje.</p>
 		<p>Com o intuito de ter uma melhor gestão da EA Sistemas, comecei a estudar na Fundação Getúlio Vargas uma Pós-Graduação em Administração de Empresas.</p>
