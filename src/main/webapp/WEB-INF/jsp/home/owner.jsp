@@ -6,7 +6,7 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="item active">
-          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:Diretor / Fundador" alt="Diretor / Fundador">
+          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:" alt="Diretor / Fundador">
           <div class="container">
             <div class="carousel-caption">
               <h1>Diretor / Fundador</h1>

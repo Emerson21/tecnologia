@@ -6,7 +6,7 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="item active">
-          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Nossa História" alt="Nossa História">
+          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:" alt="Nossa História">
           <div class="container">
             <div class="carousel-caption">
               <h1>Conheça a história da EA Sistemas</h1>

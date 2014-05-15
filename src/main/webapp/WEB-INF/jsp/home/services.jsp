@@ -8,7 +8,7 @@
       <!-- Indicators -->
       <div class="carousel-inner">
         <div class="item active">
-          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Serviços" alt="Serviços">
+          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:" alt="Serviços">
           <div class="container">
             <div class="carousel-caption">
               <h1>Nossos serviços</h1>

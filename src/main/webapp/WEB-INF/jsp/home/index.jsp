@@ -13,7 +13,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Serviços" alt="Serviços">
+          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:" alt="Serviços">
           <div class="container">
             <div class="carousel-caption">
               <h1>Nossos serviços</h1>
@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="item">
-          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:Missão" alt="Nossa Missão">
+          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:" alt="Nossa Missão">
           <div class="container">
             <div class="carousel-caption">
               <h1>Nossa missão</h1>
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="item">
-          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:História" alt="História">
+          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:" alt="História">
           <div class="container">
             <div class="carousel-caption">
               <h1>Conheça a história da EA Sistemas</h1>
