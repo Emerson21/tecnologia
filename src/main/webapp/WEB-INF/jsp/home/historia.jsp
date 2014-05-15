@@ -21,7 +21,7 @@
 	  	<h1>Nossa história</h1>
 	  	<p>Estamos atuando no mercado a 4 anos voltado ao desenvolvimento de softwares, iniciando suas atividades no ano de 2009.</p>
 		<p>A EA Sistemas iniciou suas atividades trabalhando inicialmente atuando com projetos de seguros na área da saúde e de seguros de automóveis.</p>
-		<p>Possuímos profundo conhecimento na plataforma Java, integração de sistemas, banco de dados, e estamos iniciando alguns projetos na plataforma Mobile trabalhando com aplicativos “cross-domain” (Múltiplas plataformas – Android, IOS e Windows Phone).</p>
+		<p>Possuímos profundo conhecimento na plataforma Java, integração de sistemas, banco de dados, entre outras tecnologias.</p>
 		<p>Com o intuito de fazer parcerias e tendo o objetivo de fazer os sonhos dos nossos cliente os nosso sonhos, temos a missão de contribuir significativamente na concretização dos objetivos e crescer e fazer cada vez mais clientes satisfeitos com nossos serviços de desenvolvimento de software.</p>
 		<p>Entre em contato com a EA Sistemas e faça um orçamento sem compromisso, e veja nosso diferencial.</p>
 	</div>
